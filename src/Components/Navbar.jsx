@@ -4,13 +4,13 @@ import { Menu, X } from "lucide-react";
 import { path } from "../constant";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-
+import logo from "../../src/assets/logopreschool.svg"
 const pages = [
   { name: "Home", path: path.home },
   { name: "Class", path: path.class },
   { name: "Events", path: path.events },
   { name: "About Us", path: path.about },
-  { name: "Blog", path: path.blog },
+  // { name: "Blog", path: path.blog },
   { name: "Contact", path: path.contact },
 ];
 
@@ -81,10 +81,10 @@ function Navbar() {
 
             {/* Logo */}
             <Link to="/" className="flex items-center gap-2 group">
-              <div className="h-10 w-10 rounded-xl flex items-center justify-center text-white font-bold text-lg shadow-md group-hover:animate-wiggle transition-transform duration-300 bg-primary">
-                T
+              <div className="h-10 w-10 rounded-xl flex items-center justify-center text-white font-bold text-lg  group-hover:animate-wiggle transition-transform duration-300 ">
+                <img src={logo} alt="" />
               </div>
-              <h1 className="text-2xl font-extrabold text-gray-800 tracking-tight">Torado</h1>
+              <h1 className="text-2xl font-extrabold text-gray-800 tracking-tight text-primary">PreSchool</h1>
             </Link>
 
             {/* Desktop Menu */}

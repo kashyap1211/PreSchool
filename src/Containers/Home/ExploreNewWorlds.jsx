@@ -2,8 +2,10 @@ import React from "react";
 import { FaArrowRight } from "react-icons/fa";
 import { PiStudent } from "react-icons/pi";
 import { FaChalkboardTeacher, FaBookOpen, FaUsers } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 export const ExploreNewWorlds = () => {
+   const navigate = useNavigate();
   return (
     <section className=" py-10 px-4">
       {/* HERO SECTION */}
@@ -18,7 +20,8 @@ export const ExploreNewWorlds = () => {
           />
 
           {/* Overlay */}
-          <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-secondary/80 mix-blend-multiply"></div>
+          {/* Overlay with Blur */}
+<div className="absolute inset-0 backdrop-blur-[2px] bg-black/30"></div>
 
           {/* Content */}
           <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4">
@@ -32,11 +35,11 @@ export const ExploreNewWorlds = () => {
 
             {/* Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="bg-white text-primary hover:bg-gray-50 px-8 py-4 rounded-full flex items-center justify-center gap-2 font-bold shadow-xl hover:-translate-y-1 transition-all">
+              <button  onClick={() => navigate("/class")} className="bg-white text-primary hover:bg-gray-50 px-8 py-4 rounded-full flex items-center justify-center gap-2 font-bold shadow-xl hover:-translate-y-1 cursor-pointer transition-all">
                 View All Classes <FaArrowRight />
               </button>
 
-              <button className="btn-secondary flex items-center justify-center gap-2 border-2 border-transparent hover:border-white">
+              <button  onClick={() => navigate("/contact")} className="btn-secondary flex items-center justify-center gap-2 border-2 border-transparent cursor-pointer hover:border-white">
                 Contact Us <FaArrowRight />
               </button>
             </div>

@@ -6,23 +6,23 @@ import { PiStudent } from "react-icons/pi";
 const classes = [
   {
     title: "Mathematics Class",
-    price: "$59.00",
+    price: "2000 Rs.",
     img: "https://images.unsplash.com/photo-1588072432836-e10032774350",
   },
   {
     title: "Knowledge & Science Class",
-    price: "$39.00",
-    img: "https://images.unsplash.com/photo-1584697964403-7d3c68d6c1b5",
+    price: "2500 Rs.",
+    img: "https://img.freepik.com/free-photo/kids-learning-more-about-chemistry-class_23-2149068379.jpg?semt=ais_hybrid&w=740&q=80",
   },
   {
     title: "Awesome Imagination Class",
-    price: "$53.00",
+    price: "3100 Rs.",
     img: "https://images.unsplash.com/photo-1607453998774-d533f65dac99",
   },
   {
     title: "Painting & Drawing Class",
-    price: "$46.00",
-    img: "https://images.unsplash.com/photo-1588072432907-8431d55cdb2c",
+    price: "2000 Rs.",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCsgSTvEeuOL0kchUWCuUm6fwuxAMAwv2bFg&s",
   },
 ];
 
@@ -103,9 +103,9 @@ function OurClass() {
                     {item.price} <span className="text-sm text-gray-500 font-medium">/ month</span>
                   </span>
 
-                  <button aria-label="View Class Details" className="bg-primary/10 hover:bg-primary text-primary hover:text-white p-2 rounded-xl transition-colors duration-300">
+                  {/* <button aria-label="View Class Details" className="bg-primary/10 hover:bg-primary text-primary hover:text-white p-2 rounded-xl transition-colors duration-300">
                     <FaArrowRight size={14} aria-hidden="true" />
-                  </button>
+                  </button> */}
                 </div>
               </div>
             </div>

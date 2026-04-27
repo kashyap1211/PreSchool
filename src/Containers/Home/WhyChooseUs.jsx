@@ -53,9 +53,9 @@ export const WhyChooseUs = () => {
           </div>
 
           {/* BUTTON */}
-          <button className="btn-primary flex items-center justify-center text-center gap-2">
+          {/* <button className="btn-primary flex items-center justify-center text-center gap-2">
             Learn More
-          </button>
+          </button> */}
         </div>
 
         {/* RIGHT SIDE */}

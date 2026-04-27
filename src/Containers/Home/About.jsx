@@ -4,7 +4,8 @@ import { Play, ArrowRight } from "lucide-react";
 
 // 👉 images (replace with your actual paths)
 import img1 from "../../assets/Images/about1.jpeg";
-import img2 from "../../assets/Images/about1.jpeg";
+import img2 from "../../assets/Images/about2.jpg";
+import { useNavigate } from "react-router-dom";
 
 const features = [
   { id: "01", text: "Home-like Environment & Music" },
@@ -14,6 +15,7 @@ const features = [
 ];
 
 const About = () => {
+   const navigate = useNavigate();
   return (
     <section className="py-16 md:py-24 relative overflow-hidden">
       {/* Playful Floating Background Shape */}
@@ -59,7 +61,7 @@ const About = () => {
 
         {/* RIGHT CONTENT */}
         <div className="animate-slide-up" style={{ animationDelay: '0.3s' }}>
-          <label className="uppercase tracking-widest text-sm font-bold mb-4 inline-block text-highlight-secondary">About Torado</label>
+          <label className="uppercase tracking-widest text-sm font-bold mb-4 inline-block text-highlight-secondary">About</label>
 
           <h2 className="mb-6">
             Explore Thousands Of Creative <br />
@@ -95,9 +97,9 @@ const About = () => {
           </div>
 
           {/* BUTTON */}
-          <button className="btn-secondary group flex items-center gap-2">
+          <button   onClick={() => navigate("/about-us")} className="btn-secondary cursor-pointer group flex items-center gap-2">
             Learn More
-            <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
+            <ArrowRight size={18} className="group-hover:translate-x-1  transition-transform" />
           </button>
         </div>
       </div>

@@ -4,9 +4,9 @@ const events = [
   {
     id: 1,
     title: "Children's Day Celebration",
-    date: "22 August 2025",
+    date: "14 November  2025",
     time: "9:00 am - 5:00 pm",
-    location: "New York Mindahan",
+    location: "Ahmedabad",
     rating: 5,
     image:
       "https://images.pexels.com/photos/8613089/pexels-photo-8613089.jpeg",
@@ -16,7 +16,7 @@ const events = [
     title: "World Education Day Conference",
     date: "22 August 2025",
     time: "9:00 am - 5:00 pm",
-    location: "New York Mindahan",
+    location: "Ahmedabad",
     rating: 5,
     image:
       "https://images.pexels.com/photos/8612911/pexels-photo-8612911.jpeg",
@@ -24,9 +24,9 @@ const events = [
   {
     id: 3,
     title: "Toddler Art Exhibition Day",
-    date: "22 August 2025",
+    date: "12 June 2025",
     time: "9:00 am - 5:00 pm",
-    location: "New York Mindahan",
+    location: "Ahmedabad",
     rating: 5,
     image:
       "https://images.pexels.com/photos/8613313/pexels-photo-8613313.jpeg",
@@ -131,9 +131,9 @@ export const UpcomingEvents = () => {
                 <span className="text-secondary text-lg">📍</span> {events[2].location}
               </p>
 
-              <button className="w-full btn-secondary py-3 text-center transition-transform">
+              {/* <button className="w-full btn-secondary py-3 text-center transition-transform">
                 Book Ticket
-              </button>
+              </button> */}
             </div>
           </div>
         </div>

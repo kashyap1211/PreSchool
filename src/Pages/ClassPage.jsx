@@ -12,7 +12,7 @@ const classes = [
   {
     title: "Hindi Kavita & Storytelling",
     price: "₹999",
-    img: "https://images.unsplash.com/photo-1584697964403-7d3c68d6c1b5",
+    img: "https://mycoaching.in/wp-content/uploads/Chanda-Mama-Aao-Na-Nursery-Kids-Poem-in-Hindi.webp",
   },
   {
     title: "Yoga & Meditation for Kids",
@@ -22,7 +22,7 @@ const classes = [
   {
     title: "Indian Art & Craft Class",
     price: "₹1,800",
-    img: "https://images.unsplash.com/photo-1588072432907-8431d55cdb2c",
+    img: "https://www.shutterstock.com/image-photo/children-drawing-making-crafts-kindergarten-600nw-2452547439.jpg",
   },
   {
     title: "Basic English Pronunciation",

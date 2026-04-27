@@ -3,8 +3,10 @@ import bannerDesktop from "../../assets/Images/Banner.jpg";
 import bannerMobile from "../../assets/Images/Banner1.jpg";
 import Shapes from "../../assets/Images/shape-1.png";
 import { ArrowRight, Play } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const Banner = () => {
+  const navigate = useNavigate();
   return (
     <section className="relative w-full min-h-screen flex items-center overflow-hidden font-body">
 
@@ -49,7 +51,7 @@ const Banner = () => {
           {/* Buttons */}
           <div className="flex items-center gap-4 flex-wrap animate-slide-up">
 
-            <button className="btn-primary group flex items-center gap-2">
+            <button   onClick={() => navigate("/class")} className="btn-primary cursor-pointer group flex items-center gap-2">
               Our Classes
               <ArrowRight size={18} className="group-hover:translate-x-1 transition" />
             </button>
@@ -58,9 +60,9 @@ const Banner = () => {
               <div className="w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center bg-white rounded-full shadow-lg group-hover:scale-110 transition">
                 <Play size={20} className="text-highlight ml-1" />
               </div>
-              <span className="font-heading font-semibold text-lg group-hover:text-highlight transition">
+              {/* <span className="font-heading font-semibold text-lg group-hover:text-highlight transition">
                 Watch Video
-              </span>
+              </span> */}
             </div>
 
           </div>
