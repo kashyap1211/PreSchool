@@ -12,8 +12,8 @@ export const Footer = () => {
         {/* Logo + About */}
         <div className="animate-fade-in">
           <div className="flex items-center gap-3 mb-6">
-            <div className="w-12 h-12 bg-primary rounded-xl flex items-center justify-center font-bold text-white text-xl shadow-lg">T</div>
-            <h2 className="text-3xl font-extrabold m-0 tracking-tight">Torado</h2>
+            <div className="w-12 h-12 bg-primary rounded-xl flex items-center justify-center font-bold text-white text-xl shadow-lg">P</div>
+            <h2 className="text-3xl font-extrabold m-0 tracking-tight">PreSchool</h2>
           </div>
 
           <p className="text-[15px] opacity-80 leading-relaxed mb-6 font-medium">
@@ -81,7 +81,7 @@ export const Footer = () => {
 
       {/* Bottom Line */}
       <div className="mt-16 pt-6 text-center font-semibold text-sm opacity-60 border-t-2 border-dashed border-gray-200">
-        © {new Date().getFullYear()} Torado. All Rights Reserved. Designed With ❤️
+        © {new Date().getFullYear()}  All Rights Reserved. Designed With CodeCraftLabs
       </div>
     </footer>
   );
